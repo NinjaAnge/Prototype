@@ -9,16 +9,20 @@
     <link rel="stylesheet" href="../css/colors.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../JavaScript/nav.js">
+    <link rel="stylesheet" href="../CSS/cards.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/loginform.css">
 </head>
 
-<body class="viewport">
+<body id="grad1">
     
-    <header>
+    <header class="sticky">
         <div class="container">
             <img src="../IMG/zeldalogo.png" alt="logo" class="logo">
                 <nav>
                     <ul>
-                        <li><a href="../index.html">Login</a></li>
+                        <li><a href="../DOC/login.html">Login</a></li>
                         <li><a href="../DOC/about.html">About</a></li>
                         <li><a href="../DOC/product.html">Product</a></li>
                         <li><a href="../DOC/sales.html">Sales</a></li>
@@ -27,12 +31,62 @@
                 </nav>
         </div>
     </header>
-
-   
-
-<div id="grad1"></div>
-
-
-
+    
+        <div class="footerprimary">
+            <div class="footercontainer">
+            <nav>
+                <ul>
+                    <li><a target="_blank" href="http://www.facebook.com">Faceook</a></li>
+                    <li><a target="_blank" href="../index.html">Index</a></li>
+                    
+                </ul>
+            </nav>
+            </div>
+        </div>
 </body>
+
+<h2>Welcome!</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
 </html>

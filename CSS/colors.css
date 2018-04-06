@@ -6,7 +6,6 @@
 
 
 #grad1 {
-    height: 50em;
-    background: red; /* For browsers that do not support gradients */
-    background: linear-gradient(red, yellow); /* Standard syntax (must be last) */
+    height: auto;
+    background: linear-gradient(to right, rgba(255,0,0,0), rgb(110, 145, 240));
 }
