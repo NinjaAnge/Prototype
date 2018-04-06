@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    background: #222;
+    
     font-family: 'work Sans', sans-serif;
     font-weight: 300;
 }
@@ -20,13 +20,15 @@ header::after {
     clear: both;
 }
 
+
+/*makes the logo stick to the left side with zero padding(no space inbetween*/
 .logo {
     float: left;
     padding: 10px 0;
 
 }
 
-
+/*Makes items float from the right side of the  bar*/
 nav {
     float: right;
 }
@@ -51,6 +53,7 @@ nav a {
     font-size: 14px;
 }
 
+/*Hover effect start*/
 nav a:hover {
     color: #000;
 }
@@ -70,3 +73,4 @@ nav a::before {
 nav a:hover::before {
 width: 100%;
 }
+/*Hover effect end*/
