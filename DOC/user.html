@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="../JavaScript/nav.js">
     <link rel="stylesheet" href="../CSS/cards.css">
     <link rel="stylesheet" href="../CSS/footer.css">
-    <link rel="stylesheet" href="../CSS/loginform.css">
 </head>
 
 <body id="grad1">
@@ -26,68 +25,57 @@
                         <li><a href="../DOC/about.html">About</a></li>
                         <li><a href="../DOC/product.html">Product</a></li>
                         <li><a href="../DOC/sales.html">Sales</a></li>
-                        <li><a href="../DOC/user.html">User</a></li>
                         <li><a href="#">Admin</a></li>
+                        <li><a href="../DOC/user.html">User</a></li>
                     </ul>
                 </nav>
         </div>
     </header>
-    
+
+        <div class="cardleftmargin">        
+            <img src="../IMG/smiley.png" alt="Avatar" style="width:100%">
+                <div class="containercard">
+                    <h4><b>Alexander Skjervø</b></h4> 
+                        <p>Gamer & Engineer</p> 
+                </div>
+        </div>
+        
+    <div class="containerbox border-1px margincenter">
+            <h1 style="text-align: center">info</h1>
+            <p style="text-align: center">Hei dette er en test</p>
+            <p style="text-align: center">Hei dette er en test</p>
+            <p style="text-align: center">Hei dette er en test</p>
+            <p style="text-align: center">Hei dette er en test</p>
+            <p style="text-align: center">Hei dette er en test</p>
+    </div>
+
+    <div>
+<table class="border-1px margincenter">
+    <h1 style="text-align: center; margin-top: 4%;">Kjøpte Varer</h1>
+            <tr>
+                <th>produkt</th>
+                <th>pris</th>
+                <th>lagerstatus</th>
+                <th>specs</th>
+            </tr>
+
+            
+        </table>
+   
+</table>
+    </div>
+
         <div class="footerprimary">
             <div class="footercontainer">
             <nav>
                 <ul>
                     <li><a target="_blank" href="http://www.facebook.com">Faceook</a></li>
                     <li><a target="_blank" href="../index.html">Index</a></li>
-                    
                 </ul>
             </nav>
             </div>
         </div>
 </body>
 
-<h2>Welcome!</h2>
-
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-<div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="../index.html">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="../IMG/devil.jpg" alt="Avatar" class="avatar">
-    </div>
-
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="alex" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
-
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
 
 </html>

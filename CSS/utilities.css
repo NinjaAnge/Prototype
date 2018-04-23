@@ -3,3 +3,31 @@
     height: 100%;
 
 }
+
+.margincenter {
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-right: 20%;
+}
+
+.border-1px{
+    border: solid 1px;
+    color: black;
+}
+
+.containerbox{
+    width: 40em;
+    height:20em;
+}
+
+.textaligncenter{
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+  
+} 
+table {
+    border-spacing: 5px;
+} 
