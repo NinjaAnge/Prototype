@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../JavaScript/nav.js">
     <link rel="stylesheet" href="../CSS/cards.css">
     <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/tabs.css">
 </head>
 
 <body id="grad1">
@@ -41,28 +42,36 @@
         </div>
         
     <div class="containerbox border-1px margincenter">
-            <h1 style="text-align: center">info</h1>
-            <p style="text-align: center">Hei dette er en test</p>
-            <p style="text-align: center">Hei dette er en test</p>
-            <p style="text-align: center">Hei dette er en test</p>
-            <p style="text-align: center">Hei dette er en test</p>
-            <p style="text-align: center">Hei dette er en test</p>
+            <ul id="1">
+                geir
+
+            </ul>
     </div>
 
     <div>
-<table class="border-1px margincenter">
-    <h1 style="text-align: center; margin-top: 4%;">Kjøpte Varer</h1>
-            <tr>
-                <th>produkt</th>
-                <th>pris</th>
-                <th>lagerstatus</th>
-                <th>specs</th>
-            </tr>
 
-            
-        </table>
-   
-</table>
+
+        <ul class="tabs">
+            <li>
+                <input type="radio" name="tabs" id="tab-1">
+                <label for="tab-1">First</label>
+                <div class="tab-content">
+                   placeholder
+                </div>
+            </li>
+            <li>
+                    <input type="radio" name="tabs" id="tab-2">
+                    <label for="tab-2">Second</label>
+                    <div class="tab-content">
+                       <table>
+                           <thead>
+                               
+                           </thead>
+                       </table>
+                    </div>
+                </li>
+        </ul>
+
     </div>
 
         <div class="footerprimary">
@@ -75,6 +84,7 @@
             </nav>
             </div>
         </div>
+        <script src="../JavaScript/usertablet.js"></script>
 </body>
 
 
