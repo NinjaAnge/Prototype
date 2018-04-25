@@ -31,3 +31,11 @@ table, th, td {
 table {
     border-spacing: 5px;
 } 
+
+.small-container-box{
+    width: 17em;
+    height: 11em;
+    border: solid 1px;
+    justify-content: center;
+
+}

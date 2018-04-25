@@ -62,3 +62,24 @@
 .tabs li > input:checked ~ .tab-content {
     display:block;
 }
+
+
+
+/*contactinformasjon*/
+
+.vu-desc-list dt{
+    font-weight:900;
+    text-transform: uppercase;
+    border-bottom: solid .1em #0088ce;
+    margin-bottom: 1em;
+    text-align: center;
+    
+}
+.vu-desc-list dd{
+    padding: .2em;
+    float: left;
+}
+.vu-desc-list-divider dd:not(:last-child),
+.vu-list-divider li:not(:last-child){
+    border-bottom: solid .065em #777;
+}

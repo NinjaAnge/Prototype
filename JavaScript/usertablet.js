@@ -1,95 +1,110 @@
-var listYo = [{  
-    "id":1,
-    "first_name":"Dawna",
-    "last_name":"Willerton",
-    "email":"dwillerton0@bbb.org",
-    "gender":"Female",
-    "adresse":"250 Knutson Parkway"
- },
- {  
-    "id":2,
-    "first_name":"Neilla",
-    "last_name":"Ashpole",
-    "email":"nashpole1@examiner.com",
-    "gender":"Female",
-    "adresse":"95944 Jana Plaza"
- },
- {  
-    "id":3,
-    "first_name":"Gino",
-    "last_name":"Eastcott",
-    "email":"geastcott2@naver.com",
-    "gender":"Male",
-    "adresse":"08 Miller Center"
- },
- {  
-    "id":4,
-    "first_name":"Carina",
-    "last_name":"Poole",
-    "email":"cpoole3@linkedin.com",
-    "gender":"Female",
-    "adresse":"87321 Prairieview Crossing"
- },
- {  
-    "id":5,
-    "first_name":"Nerissa",
-    "last_name":"Paskins",
-    "email":"npaskins4@qq.com",
-    "gender":"Female",
-    "adresse":"4980 Nevada Hill"
- },
- {  
-    "id":6,
-    "first_name":"Bronny",
-    "last_name":"Dumingo",
-    "email":"bdumingo5@goo.ne.jp",
-    "gender":"Male",
-    "adresse":"4277 Meadow Valley Street"
- },
- {  
-    "id":7,
-    "first_name":"Delora",
-    "last_name":"Matiebe",
-    "email":"dmatiebe6@mashable.com",
-    "gender":"Female",
-    "adresse":"25 Village Terrace"
- },
- {  
-    "id":8,
-    "first_name":"Elnore",
-    "last_name":"Btham",
-    "email":"ebtham7@hostgator.com",
-    "gender":"Female",
-    "adresse":"8 Haas Center"
- },
- {  
-    "id":9,
-    "first_name":"Loralyn",
-    "last_name":"Revely",
-    "email":"lrevely8@rambler.ru",
-    "gender":"Female",
-    "adresse":"3826 Bashford Alley"
- },
- {  
-    "id":10,
-    "first_name":"Marrissa",
-    "last_name":"Poltone",
-    "email":"mpoltone9@bandcamp.com",
-    "gender":"Female",
-    "adresse":"845 Corry Center"
- }]
+var  names = [  
+    {  
+       "id":1,
+       "first_name":"Geir",
+       "last_name":"Nilsen",
+       "email":"geirsuper@gmail.com",
+       "phone":"66644999",
+       "adress":"Heim te'a mor"
+    },
+    {  
+       "id":2,
+       "first_name":"Pearle",
+       "last_name":"Tomaino",
+       "email":"ptomaino1@acquirethisname.com",
+       "phone":"256-129-4031",
+       "adress":"7825 Summit Street"
+    },
+    {  
+       "id":3,
+       "first_name":"Catharine",
+       "last_name":"Cordelette",
+       "email":"ccordelette2@eepurl.com",
+       "phone":"779-841-6655",
+       "adress":"22611 Nobel Junction"
+    },
+    {  
+       "id":4,
+       "first_name":"Milton",
+       "last_name":"Clancey",
+       "email":"mclancey3@ustream.tv",
+       "phone":"610-940-0802",
+       "adress":"4033 Basil Junction"
+    },
+    {  
+       "id":5,
+       "first_name":"Phylis",
+       "last_name":"Cordes",
+       "email":"pcordes4@berkeley.edu",
+       "phone":"332-780-5205",
+       "adress":"31703 Vidon Circle"
+    },
+    {  
+       "id":6,
+       "first_name":"Lodovico",
+       "last_name":"Pietz",
+       "email":"lpietz5@live.com",
+       "phone":"173-445-1402",
+       "adress":"22 Arapahoe Court"
+    },
+    {  
+       "id":7,
+       "first_name":"Christen",
+       "last_name":"Mugridge",
+       "email":"cmugridge6@ebay.com",
+       "phone":"417-694-9231",
+       "adress":"21 Spohn Alley"
+    },
+    {  
+       "id":8,
+       "first_name":"Josh",
+       "last_name":"Robotham",
+       "email":"jrobotham7@geocities.com",
+       "phone":"435-877-1994",
+       "adress":"7 Algoma Center"
+    },
+    {  
+       "id":9,
+       "first_name":"Lelia",
+       "last_name":"Anthiftle",
+       "email":"lanthiftle8@nydailynews.com",
+       "phone":"630-715-7842",
+       "adress":"3426 Bartillon Parkway"
+    },
+    {  
+       "id":10,
+       "first_name":"Lew",
+       "last_name":"Spilisy",
+       "email":"lspilisy9@harvard.edu",
+       "phone":"170-553-0561",
+       "adress":"78712 Oneill Avenue"
+    }
+ ]
 
-
-
- function findObjectByKey(array, key, value) {
-     for (var i= 0; i < array.length; i++) {
-         if (array [i] [key] === value) {
-             return array[i];
+function findObjectByKey(value) {
+        for (var i = 0; i < names.length; i++) {
+            if (names[i].id === value) {
+                return names[i];
             }
-         }
-         return null;
- }
- var obj = findObjectByKey(listYo, 'id', 1);
- console.log();
+        }
+        return 'did not find';
+    }
 
- ocument.querySelector('#2').innerHTML =(ul)
+
+
+
+function flyttMeg(myid) {
+  var o = findObjectByKey(1 );
+		console.log(o);
+  var nachos = "";
+  nachos += '<dt> Contact Info </dt>'
+  nachos += '<dd>' + ' Full Name: ' + o.last_name + ' , ' + o.first_name + '</dd>'
+  nachos += '<dd>' + 'Email: ' + o.email + ' ' + '</dd>'
+  nachos += '<dd>' + 'Adress: ' + o.adress + ' ' + '</dd>'
+  nachos += '<dd>' + 'PhoneNumber: ' + o.phone + ' ' + '</dd>'
+  nachos += '<dd>' + ' '  + '</dd>'
+  
+
+document.querySelector('#listme').innerHTML = nachos;
+}
+flyttMeg()
